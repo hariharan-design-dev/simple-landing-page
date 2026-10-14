@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Landing Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      background: white;
+    }
+
+    nav h2 {
+      color: #6c5ce7;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      margin-left: 20px;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 65px);
+      margin-bottom: 20px;
+    }
+
+    .hero span {
+      color: #6c5ce7;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background: #6c5ce7;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #5142c7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h2>MyBrand.</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Build Something <span>Amazing.</span></h1>
+    <p>A simple landing page built with HTML, CSS and JavaScript.</p>
+    <button onclick="sayHello()">Get Started</button>
+  </section>
+
+  <footer id="about">
+    © 2026 MyBrand. All rights reserved.
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert("Welcome da mawa! 🚀");
+    }
+  </script>
+</body>
+</html>
